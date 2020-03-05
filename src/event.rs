@@ -37,4 +37,6 @@ pub trait EventHandler {
     }
 
     fn key_up_event(&mut self, _ctx: &mut Context, _keycode: KeyCode, _keymods: KeyMods) {}
+
+    fn text_input_event(&mut self, _ctx: &mut Context, _character: char) {}
 }
