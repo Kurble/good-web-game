@@ -115,7 +115,7 @@ impl miniquad::EventHandlerFree for EventHandlerWrapper {
         );
     }
 
-    fn char_event(&mut self, character: char, _keymods: KeyMods, _repeat: bool) {
+    fn char_event(&mut self, character: char, _keymods: miniquad::KeyMods, _repeat: bool) {
         self.event_handler.text_input_event(&mut self.context, character);
     }
 
